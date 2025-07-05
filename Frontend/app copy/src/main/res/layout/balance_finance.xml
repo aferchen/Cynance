@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/thisMonthTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-This Month-"
+        android:textColor="@color/darker_green"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+
+    <TextView
+        android:id="@+id/BalanceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance:"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/WelcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Welcome back,"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/BalanceTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/userTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="example"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/WelcomeTxt" />
+
+
+    <TextView
+        android:id="@+id/actBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="exBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BalanceTxt" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/round_edge_button"
+        android:contentDescription="Profile Button"
+        android:src="@drawable/baseline_person_24"
+        app:layout_constraintBottom_toTopOf="@+id/BalanceTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toEndOf="@+id/WelcomeTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        tools:srcCompat="@drawable/baseline_person_24" />
+
+
+    <ImageButton
+        android:id="@+id/SubcriptionsTrackerButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/round_edge_button"
+        android:backgroundTint="@color/gold"
+        android:contentDescription="Subscription tracker Button"
+        android:src="@drawable/subscription_tracker"
+        app:layout_constraintBottom_toTopOf="@+id/BalanceTxt"
+        app:layout_constraintEnd_toStartOf="@+id/userTxt"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963"
+        tools:srcCompat="@drawable/subscription_tracker" />
+
+    <ImageButton
+        android:id="@+id/FinanceQuizButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_edge_button"
+        android:backgroundTint="@color/gold"
+        android:contentDescription="Finance Quiz Button"
+        android:src="@drawable/baseline_quiz_24"
+        app:layout_constraintBottom_toTopOf="@+id/BalanceTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toEndOf="@+id/userTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963"
+        tools:srcCompat="@drawable/baseline_quiz_24" />
+
+    <ImageButton
+        android:id="@+id/currencyConvTemp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/round_edge_button"
+        android:contentDescription="Currency converter button"
+        android:src="@drawable/currency_convert"
+        app:layout_constraintBottom_toTopOf="@+id/SubcriptionsTrackerButton"
+        app:layout_constraintEnd_toStartOf="@+id/userTxt"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        tools:srcCompat="@drawable/currency_convert" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/cardnal"
+        app:itemIconTint="@color/cardnal"
+        android:background="@color/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_example" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/dailyTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/groovy"
+        android:text="Financial Tip Special for You!"
+        android:textColor="@color/cardnal"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thisMonthTxt"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/financeTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyTip"
+        app:layout_constraintVertical_bias="0.114" />
+
+<!--    <Button-->
+<!--        android:id="@+id/advising"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:backgroundTint="@color/cardnal"-->
+<!--        android:text="Financial Advising"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/financeTip"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/graphPage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:text="Graphs"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dailyTip"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/thisMonthTxt" />-->
+
+    <TextView
+        android:id="@+id/transaction1"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thisMonthTxt" />
+
+    <TextView
+        android:id="@+id/transaction1bal"
+        android:layout_width="124dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toEndOf="@+id/transaction1"
+        app:layout_constraintTop_toBottomOf="@+id/thisMonthTxt" />
+
+    <TextView
+        android:id="@+id/transaction2"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaction1" />
+
+    <TextView
+        android:id="@+id/transaction2bal"
+        android:layout_width="124dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/transaction2"
+        app:layout_constraintTop_toBottomOf="@+id/transaction1bal" />
+
+    <TextView
+        android:id="@+id/transaction3"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaction2" />
+
+    <TextView
+        android:id="@+id/transaction3bal"
+        android:layout_width="124dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/transaction2"
+        app:layout_constraintTop_toBottomOf="@+id/transaction2bal" />
+
+    <TextView
+        android:id="@+id/transaction4"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaction3" />
+
+    <TextView
+        android:id="@+id/transaction4bal"
+        android:layout_width="124dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/transaction2"
+        app:layout_constraintTop_toBottomOf="@+id/transaction3bal" />
+
+    <TextView
+        android:id="@+id/transaction5"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaction4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/transaction5bal"
+        android:layout_width="124dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toEndOf="@+id/transaction2"
+        app:layout_constraintTop_toBottomOf="@+id/transaction4bal"
+        app:layout_constraintVertical_bias="0.137" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

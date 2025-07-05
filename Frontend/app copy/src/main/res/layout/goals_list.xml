@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/goalsListTitle"
+        android:layout_width="415dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/groovy"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Goals"
+        android:textColor="#C8102E"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noGoalPresent"
+        android:layout_width="415dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/groovy"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="User has no Goals"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Goal1"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Txt"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalsListTitle" />
+
+    <TextView
+        android:id="@+id/Goal1Date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Date Txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toEndOf="@+id/Goal1"
+        app:layout_constraintTop_toBottomOf="@+id/goalsListTitle" />
+    <TextView
+        android:id="@+id/Goal2"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Txt"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Goal1" />
+
+    <TextView
+        android:id="@+id/Goal2Date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Date Txt"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/Goal2"
+        app:layout_constraintTop_toBottomOf="@+id/Goal1Date" />
+    <TextView
+        android:id="@+id/Goal3"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Txt"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Goal2" />
+
+    <TextView
+        android:id="@+id/Goal3Date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Date Txt"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/Goal3"
+        app:layout_constraintTop_toBottomOf="@+id/Goal2Date" />
+    <TextView
+        android:id="@+id/Goal4"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Txt"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Goal3" />
+
+    <TextView
+        android:id="@+id/Goal4Date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Date Txt"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/Goal4"
+        app:layout_constraintTop_toBottomOf="@+id/Goal3Date" />
+    <TextView
+        android:id="@+id/Goal5"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Txt"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Goal4" />
+
+    <TextView
+        android:id="@+id/Goal5Date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:text="Goal Date Txt"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/Goal5"
+        app:layout_constraintTop_toBottomOf="@+id/Goal4Date" />
+
+
+    <Button
+        android:id="@+id/changeGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardnal"
+        android:text="Change or add Goal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalsListTitle"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gold"
+        app:itemTextColor="@color/cardnal"
+        app:itemIconTint="@color/cardnal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_example" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

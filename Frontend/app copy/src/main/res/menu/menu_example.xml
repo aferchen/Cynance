@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+
+    <item
+        android:id="@+id/goalsBarButton"
+        android:icon="@drawable/money"
+        android:title="Goals" />
+    <item
+        android:id="@+id/financialAdvisorButton"
+        android:title="financialAdvisor"
+        android:icon="@drawable/chat"
+        />
+    <item
+        android:id="@+id/homeBarButton"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item
+    android:id="@+id/graphsButton"
+    android:title="graphs"
+    android:icon="@drawable/charticon"
+    />
+    <item
+        android:id="@+id/cryptoBarButton"
+        android:title="Crypto"
+        android:icon="@drawable/outline_target_24"
+        />
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for internet and network access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:usesCleartextTraffic="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidExample"
+        tools:targetApi="31">
+
+        <!-- Define all the activities -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cryptoPage" />
+        <activity
+            android:name=".bitcoinMenu" />
+        <activity
+            android:name=".ethereumMenu" />
+        <activity
+            android:name=".dogecoinMenu" />
+        <activity
+            android:name=".solanaMenu" />
+        <activity
+            android:name=".litecoinMenu" />
+        <activity
+            android:name=".aaveMenu" />
+        <activity
+            android:name=".Balance_FinancePage"
+            android:exported="false" />
+        <activity
+            android:name=".profileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Admin" />
+        <activity android:name="goalsList">
+
+        </activity>
+
+        <activity
+            android:name=".financialAdvisor" />
+
+        <activity android:name=".graphs"/>
+
+        <activity android:name=".lineChart"/>
+
+        <activity android:name=".chat"/>
+
+        <activity android:name=".tipCreationAdmin"/>
+
+        <!-- MainActivity - the app's entry point -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".goalsPage"
+            android:exported="false"
+            >
+        </activity>
+        <activity android:name=".profileEdit"/>
+        <activity android:name=".currencyConverter"/>
+        <activity android:name=".finance_quiz"/>
+        <activity android:name=".SubscriptionTracker"/>
+    </application>
+
+</manifest>

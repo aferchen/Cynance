@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clear">@android:color/transparent</color>
+    <color name="cardnal">#C8133F</color>
+    <color name="yellow">#FFF722</color>
+    <color name="gold">#F1BE48</color>
+    <color name="cynance_orange">#FF814F</color>
+    <color name="darker_green">#2db33c</color>
+    <color name="bitcoinGold">#f7931a</color>
+    <color name="goalGood">#74B72E</color>
+    <color name="goalBad">#900D09</color>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:text="Enter Goal:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/addGoalText"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/addGoalText"
+            android:layout_width="259dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Enter Goal Here"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Date:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/addGoalDateText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <EditText
+            android:id="@+id/addGoalDateText"
+            android:layout_width="259dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Enter Deadline (Year-Month-Day)"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addGoalText"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Enter \n Description:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/addGoalDescriptionText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <EditText
+            android:id="@+id/addGoalDescriptionText"
+            android:layout_width="259dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Enter Goal Description"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addGoalDateText"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Enter Old \n Goal Name:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/addGoalDescriptionText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <EditText
+            android:id="@+id/oldGoalName"
+            android:layout_width="259dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edittext_border"
+            android:hint="(Only for updates)"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addGoalDescriptionText"
+            app:layout_constraintVertical_bias="0.031" />
+
+
+        <ImageButton
+            android:id="@+id/goalAddButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_edge_button"
+            android:contentDescription="Add Button"
+            android:src="@drawable/round_delete_24"
+            app:layout_constraintBottom_toTopOf="@+id/addGoalText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toEndOf="@+id/goalUpdateButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285"
+            tools:srcCompat="@drawable/baseline_add_24" />
+
+        <ImageButton
+            android:id="@+id/goalUpdateButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="83dp"
+            android:background="@drawable/round_edge_button"
+            android:contentDescription="Update Button"
+            android:src="@drawable/baseline_refresh_24"
+            app:layout_constraintEnd_toStartOf="@+id/deleteGoalButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/baseline_refresh_24" />
+
+        <Button
+            android:id="@+id/deleteGoalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goalsBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardnal"
+            android:text="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deleteGoalButton"
+            app:layout_constraintVertical_bias="0.89" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
